@@ -27,4 +27,17 @@ miBoton.onclick = function () {
     estableceNombreUsuario();
   };
   
-  
+const myHeaders = new Headers();
+myHeaders.append("X-MAL-CLIENT-ID", "cbbf880a5df1aa4ce57752f503668026");
+myHeaders.append("Access-Control-Allow-Origin", "*");
+
+const requestOptions = {
+method: "GET",
+headers: myHeaders,
+redirect: "follow"
+};
+
+fetch("https://api.myanimelist.net/v2/users/Fabricckk/animelist?status=completed&limit=10", requestOptions)
+.then((response) => response.text())
+.then((result) => console.log(result))
+.catch((error) => console.error(error));
