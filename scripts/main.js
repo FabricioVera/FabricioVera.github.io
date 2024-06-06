@@ -1,4 +1,4 @@
-let imagen = document.querySelector("img");
+let imagen = document.querySelector(".imagenes");
 imagen.onclick = function () {
     let source = imagen.getAttribute("src");
     if(source==="images/chisato.jpg"){
