@@ -9,6 +9,7 @@
         <title>Mi Primera Pagina Web</title>
     </head>
     <body>
+        
         <header>
             <h1>Chisato es muy linda.</h1>
         </header>
@@ -16,15 +17,15 @@
         <p>Puedes adivinar el nombre de este personaje y el anime en el que aparece?</p>
 
         <img id="imagenes" src="images/chisato.jpg" alt="Chisato Nishikigi viendo al espectador con la mano en la mejilla">
-        <form>
+        <div>
             <input name="character-input" placeholder="Nombre Personaje" list="character-names" autocomplete="off">
             <input name="anime-input" placeholder="Nombre Anime" list="anime-names" autocomplete="off">
-            <button id="responder">RESPONDER</button>
+            <button id="responder" onclick="printnumber()">RESPONDER</button>
             <button id="pasar">PASAR</button>
-        </form>
+        </div>
         <datalist id="character-names"></datalist>
         <datalist id="anime-names"></datalist>
-
         <script type="module" src="scripts/main.js"></script>
+        
     </body>
 </html>

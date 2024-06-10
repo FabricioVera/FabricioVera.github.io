@@ -17,7 +17,7 @@ imagen.onclick = function () {
 };
 */
 
-
+/*
 
 let miBoton = document.querySelector("pasar");
 let miTitulo = document.querySelector("h1");
@@ -36,12 +36,11 @@ if (!localStorage.getItem("nombre")) {
     let nombreAlmacenado = localStorage.getItem("nombre");
     miTitulo.textContent = "Sabías que Chisato es muy linda, " + nombreAlmacenado + "?";
 }
-/*
+
 miBoton.onclick = function () {
     estableceNombreUsuario();
   };
 */
-
 
 
 //json url
@@ -71,35 +70,60 @@ animes.forEach((obj) => {
 })
 
  //1. espera a que se presione el boton
+ document.getElementById("pasar").onclick = async function ObtenerPersonajeAleatorio(){
+    const maxanime = 1000;
+    let data;
+    let randomanimeid;
+    let numeroaleatorio;
+    let randomanimename;
+    let randomcharacterimage;
+    let randomcharactername;
+    const re = new RegExp("questionmark");
+    do{
+        do{
+            numeroaleatorio=Math.floor(Math.random() * maxanime);
 
-const btnpasar=document.querySelector("#pasar");
-const maxanime = 1000;
-let numeroaleatorio=Math.floor(Math.random() * maxanime);
+            randomanimename=String(animes[numeroaleatorio]);
+            url="https://api.jikan.moe/v4/anime?q="+randomanimename;
 
-let randomanimename=String(animes[numeroaleatorio]);
+            data = await getData(url,requestOptions);
+            console.log({ data });
+            randomanimeid = data["data"][0]["mal_id"];
+            console.log(randomanimeid);
+            // 2. guardar el nombre y obtener su anime y la imagen
+
+            url="https://api.jikan.moe/v4/anime/"+randomanimeid+"/characters";
+            data = await getData(url,requestOptions);
+            console.log({data});
+            
+            setTimeout(() => {
+                console.log("0.5 Segundo esperado")
+            }, 1000);
+        }while (Object.keys(data['data']).length===0);
+        let maxcharacter=Object.keys(data["data"]).length -1;
+        
+        numeroaleatorio=Math.floor(Math.random() * maxcharacter);
+        randomcharactername=data["data"][numeroaleatorio]["character"]["name"];
+
+        randomcharacterimage=data["data"][numeroaleatorio]["character"]["images"];
+        
+        console.log(numeroaleatorio);
+        console.log(randomcharacterimage["webp"]["image_url"]);
+        setTimeout(() => {
+            console.log("0.5 Segundo esperado :imagen");
+        }, 1000);
+    }while ((re.exec(randomcharacterimage["webp"]["image_url"])) !== null);
 
 
-  
-url="https://api.jikan.moe/v4/anime?q="+randomanimename
-
-data = await getData(url,requestOptions);
-console.log({ data });
-let randomanimeid = data["data"][0]["mal_id"];
-console.log(randomanimeid);
+    // 3. reemplazar la imagen en el medio
+    imagen.setAttribute("src",data["data"][numeroaleatorio]["character"]["images"]["webp"]["image_url"]);
+    // 4. esperar respuesta
+}
 
 
-// 2. guardar el nombre y obtener su anime y la imagen
 
-url="https://api.jikan.moe/v4/anime/"+randomanimeid+"/characters";
-data = await getData(url,requestOptions);
-console.log({data});
-let maxcharacter=Object.keys(data["data"]).length;
-numeroaleatorio=Math.floor(Math.random() * maxcharacter);
-let randomcharactername=data["data"][numeroaleatorio]["character"]["name"];
+/*
+const btnpasar = document.getElementById("pasar");
+btnpasar.addEventListener("click", await ObtenerPersonajeAleatorio);
 
-let randomcharacterimage=data["data"][numeroaleatorio]["character"]["name"]["images"];
-console.log(data["data"][numeroaleatorio]["character"]["images"]["webp"]["image_url"]);
-
-// 3. reemplazar la imagen en el medio
-imagen.setAttribute("src",data["data"][numeroaleatorio]["character"]["images"]["webp"]["image_url"]);
-// 4. esperar respuesta
+*/
