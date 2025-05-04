@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú con Imagen y Botones</title>
+  <style>
+    .click-area {
+      position: absolute;
+      background-color: rgba(0, 128, 255, 0.4);
+      border: 2px dashed #004488;
+      cursor: pointer;
+    }
+
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    #popup-menu {
+      display: none;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 3px solid #333;
+      padding: 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      z-index: 1000;
+      width: 600px;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    #popup-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .main-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* o "cover" si preferís que se recorte en lugar de deformarse */
+      z-index: 0;
+    }
+
+    .button-img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    #close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 1001;
+      background-color: #fff;
+      border: 1px solid #333;
+      cursor: pointer;
+      padding: 2px 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+  <div id="popup-menu">
+    <div id="popup-content">
+      <img id="main-img" class="main-image" src="" alt="Imagen principal">
+      <!-- Los botones se agregarán dinámicamente acá -->
+      <button id="close-btn">X</button>
+    </div>
+  </div>
+
+  <script>
+    const areas = [
+      {
+        x: 50, y: 100, width: 120, height: 100,
+        image: 'planets/Mercury.webp',
+        buttons: [
+          { x: 50, y: 50, image: 'node.png', id: 'btn-1a' },
+          { x: 200, y: 80, image: 'node.png', id: 'btn-1b' },
+        ]
+      },
+      {
+        x: 300, y: 150, width: 180, height: 80,
+        image: 'planets/Venus.webp',
+        buttons: [
+          { x: 100, y: 40, image: 'node.png', id: 'btn-2a' },
+          { x: 250, y: 100, image: 'node.png', id: 'btn-2b' },
+        ]
+      }
+    ];
+
+    const popup = document.getElementById("popup-menu");
+    const overlay = document.getElementById("overlay");
+    const mainImg = document.getElementById("main-img");
+    const popupContent = document.getElementById("popup-content");
+    const closeBtn = document.getElementById("close-btn");
+
+    function clearButtons() {
+      document.querySelectorAll(".button-img").forEach(btn => btn.remove());
+    }
+
+    function showMenu(area) {
+      // Set main image
+      mainImg.src = area.image;
+
+      // Remove old buttons
+      clearButtons();
+
+      // Add new buttons
+      area.buttons.forEach(btn => {
+        const img = document.createElement('img');
+        img.src = btn.image;
+        img.classList.add('button-img');
+        img.style.left = btn.x + 'px';
+        img.style.top = btn.y + 'px';
+
+        img.addEventListener('click', (e) => {
+          e.stopPropagation(); // evita que cierre el popup
+          alert("Presionaste: " + btn.id);
+        });
+
+        popupContent.appendChild(img);
+      });
+
+      overlay.style.display = "block";
+      popup.style.display = "block";
+    }
+
+    function hideMenu() {
+      overlay.style.display = "none";
+      popup.style.display = "none";
+      clearButtons();
+    }
+
+    closeBtn.addEventListener("click", hideMenu);
+    overlay.addEventListener("click", hideMenu);
+
+    // Crear las áreas
+    areas.forEach((areaData, index) => {
+      const area = document.createElement('div');
+      area.classList.add('click-area');
+      area.style.left = areaData.x + 'px';
+      area.style.top = areaData.y + 'px';
+      area.style.width = areaData.width + 'px';
+      area.style.height = areaData.height + 'px';
+
+      area.addEventListener('click', () => showMenu(areaData));
+
+      document.body.appendChild(area);
+    });
+  </script>
+</body>
+</html>

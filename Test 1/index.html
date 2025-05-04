@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa con ventanas</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #fondo {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('map.jpg'); /* Reemplazá por tu imagen */
+      background-size: cover;
+    }
+
+    .zona {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      background-color: rgba(255, 0, 0, 0); /* visible mientras desarrollás */
+    }
+
+    .ventana {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+        display: none;
+        z-index: 10;
+        /* Esto evita que se mueva al medir el tamaño */
+        max-width: 80vw;
+    }
+
+    .ventana img {
+      max-width: 500px;
+      max-height: 500px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .cerrar {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="fondo">
+    <div class="zona" style="top: 590px; left: 800px;" data-imagen="planets/Mercury.webp"></div>
+    <div class="zona" style="top: 675px; left: 995px;" data-imagen="planets/Venus.webp"></div>
+    <div class="zona" style="top: 500px; left: 1155px;" data-imagen="planets/Earth.webp"></div>
+
+    <!-- Ventana flotante -->
+    <div id="ventana" class="ventana">
+      <img id="imagenVentana" src="" alt="Contenido">
+      <button class="cerrar" onclick="cerrarVentana()">Cerrar</button>
+    </div>
+  </div>
+
+  <script>
+    const zonas = document.querySelectorAll('.zona');
+    const ventana = document.getElementById('ventana');
+    const imagenVentana = document.getElementById('imagenVentana');
+
+    zonas.forEach(zona => {
+  zona.addEventListener('click', (e) => {
+    const src = zona.getAttribute('data-imagen');
+    imagenVentana.src = src;
+
+    // Mostrar la ventana temporalmente para calcular el tamaño
+    ventana.style.display = 'block';
+    ventana.style.visibility = 'hidden'; // Oculta visualmente pero deja medir
+
+    // Obtener tamaño
+    const rect = ventana.getBoundingClientRect();
+    const ancho = rect.width;
+    const alto = rect.height;
+
+    // Centrar respecto al mouse
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    ventana.style.left = (mouseX - ancho / 2) + 'px';
+    ventana.style.top = (mouseY - alto / 2) + 'px';
+
+    // Mostrar normalmente
+    ventana.style.visibility = 'visible';
+  });
+});
+
+    function cerrarVentana() {
+      ventana.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
