@@ -69,3 +69,8 @@ td img {
   margin-right: 0.5rem;
   border-radius: 4px;
 }
+
+.autocomplete-item:focus,
+.autocomplete-item.selected {
+  background-color: #444;
+}

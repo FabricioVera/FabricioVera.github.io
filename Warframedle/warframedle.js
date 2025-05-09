@@ -3,15 +3,18 @@ let warframeDelDia = null;
 
 document.addEventListener("DOMContentLoaded", async () => {
   const input = document.getElementById("guessInput");
-const list = document.getElementById("autocompleteList");
+  const list = document.getElementById("autocompleteList");
 
-input.addEventListener("input", () => {
-  const query = input.value.toLowerCase();
-  list.innerHTML = "";
-  if (!query) return;
+  let selectedIndex = -1;
+
+  input.addEventListener("input", () => {
+    const query = input.value.toLowerCase();
+    list.innerHTML = "";
+    selectedIndex = -1;
+    if (!query) return;
 
     const matches = warframes.filter(w => w.name.toLowerCase().includes(query)).slice(0, 10);
-    matches.forEach(w => {
+    matches.forEach((w, i) => {
       const item = document.createElement("div");
       item.classList.add("autocomplete-item");
       item.innerHTML = `<img src="${w.wikiaThumbnail}" alt="${w.name}"/><span>${w.name}</span>`;
@@ -23,6 +26,39 @@ input.addEventListener("input", () => {
       list.appendChild(item);
     });
   });
+
+  input.addEventListener("keydown", (e) => {
+    const items = list.querySelectorAll(".autocomplete-item");
+    if (!items.length) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      selectedIndex = (selectedIndex + 1) % items.length;
+      updateSelection(items);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+      updateSelection(items);
+    } else if (e.key === "Enter") {
+      if (selectedIndex >= 0 && items[selectedIndex]) {
+        e.preventDefault();
+        items[selectedIndex].click();
+      } else {
+        handleGuess();
+      }
+      list.innerHTML = "";
+    } else if (e.key === "Escape") {
+      list.innerHTML = "";
+      selectedIndex = -1;
+    }
+  });
+
+  function updateSelection(items) {
+    items.forEach((item, i) => {
+      item.style.backgroundColor = (i === selectedIndex) ? "#444" : "transparent";
+    });
+  }
+
 
   document.addEventListener("click", (e) => {
     if (!e.target.closest("#guessInput") && !e.target.closest("#autocompleteList")) {
