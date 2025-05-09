@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Excalibur",
+    "sex": "Masculino",
+    "isPrime": false,
+    "aura": "Vazarin",
+    "releaseDate": "2013-03-25"
+  },
+  {
+    "name": "Mag",
+    "sex": "Femenino",
+    "isPrime": false,
+    "aura": "Naramon",
+    "releaseDate": "2013-03-25"
+  }
+]
