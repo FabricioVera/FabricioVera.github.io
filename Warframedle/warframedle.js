@@ -4,7 +4,6 @@ let warframeDelDia = null;
 document.addEventListener("DOMContentLoaded", async () => {
   const input = document.getElementById("guessInput");
   const list = document.getElementById("autocompleteList");
-  const datalist = document.getElementById("warframeList");
   const submitBtn = document.getElementById("submitGuess");
   const tableBody = document.getElementById("resultsBody");
   const table = document.getElementById("resultsTable");
@@ -16,12 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   warframes = await res.json();
   warframeDelDia = warframes[getWarframeDelDiaIndex()];
 
-  // Crear datalist (opcional si usás tu propio autocomplete visual)
-  warframes.forEach(w => {
-    const option = document.createElement("option");
-    option.value = w.name;
-    datalist.appendChild(option);
-  });
 
   // Autocompletado personalizado
   input.addEventListener("input", () => {
