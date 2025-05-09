@@ -2,6 +2,34 @@ let warframes = [];
 let warframeDelDia = null;
 
 document.addEventListener("DOMContentLoaded", async () => {
+  const input = document.getElementById("guessInput");
+const list = document.getElementById("autocompleteList");
+
+input.addEventListener("input", () => {
+  const query = input.value.toLowerCase();
+  list.innerHTML = "";
+  if (!query) return;
+
+    const matches = warframes.filter(w => w.name.toLowerCase().includes(query)).slice(0, 10);
+    matches.forEach(w => {
+      const item = document.createElement("div");
+      item.classList.add("autocomplete-item");
+      item.innerHTML = `<img src="${w.wikiaThumbnail}" alt="${w.name}"/><span>${w.name}</span>`;
+      item.addEventListener("click", () => {
+        input.value = w.name;
+        list.innerHTML = "";
+        handleGuess();
+      });
+      list.appendChild(item);
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("#guessInput") && !e.target.closest("#autocompleteList")) {
+      list.innerHTML = "";
+    }
+  });
+
   const res = await fetch("data/warframes.json");
   warframes = await res.json();
 
