@@ -4,9 +4,26 @@ let warframeDelDia = null;
 document.addEventListener("DOMContentLoaded", async () => {
   const input = document.getElementById("guessInput");
   const list = document.getElementById("autocompleteList");
+  const datalist = document.getElementById("warframeList");
+  const submitBtn = document.getElementById("submitGuess");
+  const tableBody = document.getElementById("resultsBody");
+  const table = document.getElementById("resultsTable");
 
   let selectedIndex = -1;
 
+  // Cargar datos
+  const res = await fetch("data/warframes.json");
+  warframes = await res.json();
+  warframeDelDia = warframes[getWarframeDelDiaIndex()];
+
+  // Crear datalist (opcional si usás tu propio autocomplete visual)
+  warframes.forEach(w => {
+    const option = document.createElement("option");
+    option.value = w.name;
+    datalist.appendChild(option);
+  });
+
+  // Autocompletado personalizado
   input.addEventListener("input", () => {
     const query = input.value.toLowerCase();
     list.innerHTML = "";
@@ -27,29 +44,35 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
+  // Navegación con teclado
   input.addEventListener("keydown", (e) => {
     const items = list.querySelectorAll(".autocomplete-item");
     if (!items.length) return;
 
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      selectedIndex = (selectedIndex + 1) % items.length;
-      updateSelection(items);
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      selectedIndex = (selectedIndex - 1 + items.length) % items.length;
-      updateSelection(items);
-    } else if (e.key === "Enter") {
-      if (selectedIndex >= 0 && items[selectedIndex]) {
+    switch (e.key) {
+      case "ArrowDown":
         e.preventDefault();
-        items[selectedIndex].click();
-      } else {
-        handleGuess();
-      }
-      list.innerHTML = "";
-    } else if (e.key === "Escape") {
-      list.innerHTML = "";
-      selectedIndex = -1;
+        selectedIndex = (selectedIndex + 1) % items.length;
+        updateSelection(items);
+        break;
+      case "ArrowUp":
+        e.preventDefault();
+        selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+        updateSelection(items);
+        break;
+      case "Enter":
+        e.preventDefault();
+        if (selectedIndex >= 0 && items[selectedIndex]) {
+          items[selectedIndex].click();
+        } else {
+          handleGuess();
+        }
+        list.innerHTML = "";
+        break;
+      case "Escape":
+        list.innerHTML = "";
+        selectedIndex = -1;
+        break;
     }
   });
 
@@ -59,94 +82,78 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     if (selectedIndex >= 0 && items[selectedIndex]) {
-      const selectedItem = items[selectedIndex];
-      selectedItem.scrollIntoView({ block: "nearest" });
+      items[selectedIndex].scrollIntoView({ block: "nearest" });
     }
   }
 
-
+  // Cerrar autocompletado si se hace clic fuera
   document.addEventListener("click", (e) => {
     if (!e.target.closest("#guessInput") && !e.target.closest("#autocompleteList")) {
       list.innerHTML = "";
     }
   });
 
-  const res = await fetch("data/warframes.json");
-  warframes = await res.json();
-
-  // Warframe del día según la fecha
-  const today = new Date().toISOString().slice(0, 10);
-  const seed = today.replaceAll("-", "");
-  const index = parseInt(seed) % warframes.length;
-  index = getWarframeDelDiaIndex();
-  warframeDelDia = warframes[index];
-
-
-  // Autocompletado
-  const datalist = document.getElementById("warframeList");
-  warframes.forEach(w => {
-    const option = document.createElement("option");
-    option.value = w.name;
-    datalist.appendChild(option);
-  });
-
-  // Eventos
-  document.getElementById("submitGuess").addEventListener("click", handleGuess);
-  document.getElementById("guessInput").addEventListener("keypress", (e) => {
+  // Envío con botón o enter
+  submitBtn.addEventListener("click", handleGuess);
+  input.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleGuess();
   });
+
+  function handleGuess() {
+    const guess = input.value.trim().toLowerCase();
+    const guessed = warframes.find(w => w.name.toLowerCase() === guess);
+
+    if (!guessed) {
+      alert("Ese Warframe no existe en la lista.");
+      return;
+    }
+
+    const row = document.createElement("tr");
+
+    // Imagen
+    const imgCell = document.createElement("td");
+    const img = document.createElement("img");
+    img.src = guessed.wikiaThumbnail;
+    img.alt = guessed.name;
+    img.style.width = "64px";
+    img.style.height = "64px";
+    img.style.objectFit = "cover";
+    imgCell.appendChild(img);
+    row.appendChild(imgCell);
+
+    // Comparaciones
+    addCell(row, guessed.name, guessed.name === warframeDelDia.name);
+    addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex);
+    addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime);
+    addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura);
+    addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate);
+
+    tableBody.appendChild(row);
+    table.classList.remove("hidden");
+
+    input.value = ""; // limpiar input
+
+    // Deshabilitar si adivinó
+    if (guessed.name === warframeDelDia.name) {
+      input.disabled = true;
+      submitBtn.disabled = true;
+    }
+  }
+
+  function addCell(row, value, isCorrect) {
+    const cell = document.createElement("td");
+    cell.textContent = value;
+    cell.classList.add(isCorrect ? "correct" : "incorrect");
+    row.appendChild(cell);
+  }
+
+  function getWarframeDelDiaIndex() {
+    const today = new Date().toISOString().slice(0, 10);
+    const seed = today.replaceAll("-", "");
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+      hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
+    }
+    return hash % warframes.length;
+  }
 });
-
-function handleGuess() {
-  const input = document.getElementById("guessInput").value.trim().toLowerCase();
-  const guessed = warframes.find(w => w.name.toLowerCase() === input);
-
-  if (!guessed) {
-    alert("Ese Warframe no existe en la lista.");
-    return;
-  }
-
-  const row = document.createElement("tr");
-
-  // Imagen
-  const imgCell = document.createElement("td");
-  const img = document.createElement("img");
-  img.src = guessed.wikiaThumbnail;
-  img.alt = guessed.name;
-  img.style.width = "64px";
-  img.style.height = "64px";
-  img.style.objectFit = "cover";
-  imgCell.appendChild(img);
-  row.appendChild(imgCell);
-
-  // Comparaciones
-  addCell(row, guessed.name, guessed.name === warframeDelDia.name);
-  addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex);
-  addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime);
-  addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura);
-  addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate);
-
-  document.getElementById("resultsBody").appendChild(row);
-  document.getElementById("resultsTable").classList.remove("hidden");
-
-  document.getElementById("guessInput").value = ""; // limpiar input
-}
-
-function addCell(row, value, isCorrect) {
-  const cell = document.createElement("td");
-  cell.textContent = value;
-  cell.classList.add(isCorrect ? "correct" : "incorrect");
-  row.appendChild(cell);
-}
-
-function getWarframeDelDiaIndex() {
-  const today = new Date().toISOString().slice(0, 10);
-  const seed = today.replaceAll("-", "");
-
-  // Ejemplo de "hash" simple tipo cifrado por fecha (esto es ofuscación, no seguridad real)
-  let hash = 0;
-  for (let i = 0; i < seed.length; i++) {
-    hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
-  }
-  return hash % warframes.length;
-}
