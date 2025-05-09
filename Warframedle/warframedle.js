@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate, delay * 4);
 
 
-    tableBody.insertBefore(row);
+    tableBody.insertBefore(row, tableBody.firstChild);
     table.classList.remove("hidden");
 
     input.value = ""; // limpiar input
