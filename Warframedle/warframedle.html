@@ -9,12 +9,15 @@
 <body>
   <main>
     <h1>¿Cuál es el Warframe del día?</h1>
-    <input type="text" id="guessInput" placeholder="Escribí el nombre del Warframe..." />
+    <input list="warframeList" type="text" id="guessInput" placeholder="Escribí el nombre del Warframe..." />
+    <datalist id="warframeList"></datalist>
+
     <button id="submitGuess">Adivinar</button>
 
     <table id="resultsTable" class="hidden">
       <thead>
         <tr>
+          <th>Imagen</th>
           <th>Nombre</th>
           <th>Género</th>
           <th>Es Prime</th>
