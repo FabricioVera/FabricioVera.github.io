@@ -115,13 +115,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     row.appendChild(imgCell);
 
     // Comparaciones
-    addCell(row, guessed.name, guessed.name === warframeDelDia.name);
-    addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex);
-    addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime);
-    addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura);
-    addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate);
+    const delay = 100;
+    addCell(row, guessed.name, guessed.name === warframeDelDia.name, delay * 0);
+    addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex, delay * 1);
+    addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime, delay * 2);
+    addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura, delay * 3);
+    addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate, delay * 4);
 
-    tableBody.appendChild(row);
+
+    tableBody.insertBefore(row);
     table.classList.remove("hidden");
 
     input.value = ""; // limpiar input
@@ -133,12 +135,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
-  function addCell(row, value, isCorrect) {
+  function addCell(row, value, isCorrect, delayMs = 0) {
     const cell = document.createElement("td");
     cell.textContent = value;
     cell.classList.add(isCorrect ? "correct" : "incorrect");
+    cell.style.opacity = "0";
+    cell.style.transition = "opacity 0.3s ease";
     row.appendChild(cell);
+
+    setTimeout(() => {
+      cell.style.opacity = "1";
+    }, delayMs);
   }
+
 
   function getWarframeDelDiaIndex() {
     const today = new Date().toISOString().slice(0, 10);
