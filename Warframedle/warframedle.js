@@ -57,6 +57,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     items.forEach((item, i) => {
       item.style.backgroundColor = (i === selectedIndex) ? "#444" : "transparent";
     });
+
+    if (selectedIndex >= 0 && items[selectedIndex]) {
+      const selectedItem = items[selectedIndex];
+      selectedItem.scrollIntoView({ block: "nearest" });
+    }
   }
 
 
@@ -73,7 +78,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const today = new Date().toISOString().slice(0, 10);
   const seed = today.replaceAll("-", "");
   const index = parseInt(seed) % warframes.length;
+  index = getWarframeDelDiaIndex();
   warframeDelDia = warframes[index];
+
 
   // Autocompletado
   const datalist = document.getElementById("warframeList");
@@ -130,4 +137,16 @@ function addCell(row, value, isCorrect) {
   cell.textContent = value;
   cell.classList.add(isCorrect ? "correct" : "incorrect");
   row.appendChild(cell);
+}
+
+function getWarframeDelDiaIndex() {
+  const today = new Date().toISOString().slice(0, 10);
+  const seed = today.replaceAll("-", "");
+
+  // Ejemplo de "hash" simple tipo cifrado por fecha (esto es ofuscación, no seguridad real)
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
+  }
+  return hash % warframes.length;
 }

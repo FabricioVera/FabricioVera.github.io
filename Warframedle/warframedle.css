@@ -47,6 +47,7 @@ td img {
   max-height: 200px;
   overflow-y: auto;
   width: 100%;
+  scrollbar-width: 1px;
   z-index: 10;
 }
 
