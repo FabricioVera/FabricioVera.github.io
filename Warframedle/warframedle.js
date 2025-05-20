@@ -123,19 +123,29 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const guessedYear = parseInt(guessed.releaseYear);
     const correctYear = parseInt(warframeDelDia.releaseYear);
-    console.log("anio guess: "+guessedYear);
-    console.log(correctYear);
-    let yearFeedback = guessedYear;
+    const isCorrectYear = guessedYear === correctYear;
 
-    if (guessedYear > correctYear) {
-      yearFeedback += " 🔽";
-    } else if (guessedYear < correctYear) {
-      yearFeedback += " 🔼";
-    } else {
-      yearFeedback += " ✅";
+    const yearCell = document.createElement("td");
+    yearCell.textContent = guessedYear;
+    yearCell.classList.add(isCorrectYear ? "correct" : "incorrect");
+    yearCell.style.opacity = "0";
+    yearCell.style.transition = "opacity 0.3s ease";
+
+    // Fondo con flechas si no es correcto
+    if (!isCorrectYear) {
+      const arrow = guessedYear < correctYear ?  "tTGGctKT/arrow-up.png" : "DyvnF684/arrow-down.png";
+      yearCell.style.backgroundImage = `url("https://i.postimg.cc/${arrow}")`;
+      yearCell.style.backgroundRepeat = "no-repeat";
+      yearCell.style.backgroundPosition = "center center";
+      yearCell.style.backgroundSize = "100px";
     }
 
-    addCell(row, yearFeedback, guessedYear === correctYear, delay * 4);
+    setTimeout(() => {
+      yearCell.style.opacity = "1";
+    }, delay * 4);
+
+    row.appendChild(yearCell);
+
 
 
 
