@@ -1,5 +1,5 @@
-let warframes = [];
-let warframeDelDia = null;
+let mods = [];
+let modDelDia = null;
 
 document.addEventListener("DOMContentLoaded", async () => {
   const input = document.getElementById("guessInput");
@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   let selectedIndex = -1;
 
   // Cargar datos
-  const res = await fetch("data/warframes.json");
-  warframes = await res.json();
-  warframeDelDia = warframes[getWarframeDelDiaIndex()];
+  const res = await fetch("data/mods_con_tags.json");
+  mods = await res.json();
+  modDelDia = mods[getModDelDiaIndex()];
 
 
   // Autocompletado personalizado
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     selectedIndex = -1;
     if (!query) return;
 
-    const matches = warframes.filter(w => w.name.toLowerCase().includes(query)).slice(0, 10);
-    matches.forEach((w, i) => {
+    const matches = mods.filter(m => m.name.toLowerCase().includes(query)).slice(0, 10);
+    matches.forEach((m, i) => {
       const item = document.createElement("div");
       item.classList.add("autocomplete-item");
-      item.innerHTML = `<img src="${w.wikiaThumbnail}" alt="${w.name}"/><span>${w.name}</span>`;
+      item.innerHTML = `<img src="${m.wikiaThumbnail}" alt="${m.name}"/><span>${m.name}</span>`;
       item.addEventListener("click", () => {
-        input.value = w.name;
+        input.value = m.name;
         list.innerHTML = "";
         handleGuess();
       });
@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function handleGuess() {
     const guess = input.value.trim().toLowerCase();
-    const guessed = warframes.find(w => w.name.toLowerCase() === guess);
+    const guessed = mods.find(w => w.name.toLowerCase() === guess);
 
     if (!guessed) {
-      alert("Ese Warframe no existe en la lista.");
+      alert("Ese mod no existe en la lista.");
       return;
     }
 
@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Comparaciones
     const delay = 100;
-    addCell(row, guessed.name, guessed.name === warframeDelDia.name, delay * 0);
-    addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex, delay * 1);
-    addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime, delay * 2);
-    addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura, delay * 3);
-    addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate, delay * 4);
+    addCell(row, guessed.name, guessed.name === modDelDia.name, delay * 0);
+    addCell(row, guessed.sex, guessed.sex === modDelDia.sex, delay * 1);
+    addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === modDelDia.isPrime, delay * 2);
+    addCell(row, guessed.aura, guessed.aura === modDelDia.aura, delay * 3);
+    addCell(row, guessed.releaseDate, guessed.releaseDate === modDelDia.releaseDate, delay * 4);
 
 
     tableBody.insertBefore(row, tableBody.firstChild);
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     input.value = ""; // limpiar input
 
     // Deshabilitar si adivinó
-    if (guessed.name === warframeDelDia.name) {
+    if (guessed.name === modDelDia.name) {
       input.disabled = true;
       submitBtn.disabled = true;
     }
@@ -149,13 +149,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
 
-  function getWarframeDelDiaIndex() {
+  function getModDelDiaIndex() {
     const today = new Date().toISOString().slice(0, 10);
     const seed = today.replaceAll("-", "");
     let hash = 0;
     for (let i = 0; i < seed.length; i++) {
       hash = (hash * 31 + seed.charCodeAt(i)) % 100000;
     }
-    return hash % warframes.length;
+    return hash % mods.length;
   }
 });

@@ -120,7 +120,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     addCell(row, guessed.sex, guessed.sex === warframeDelDia.sex, delay * 1);
     addCell(row, guessed.isPrime ? "Sí" : "No", guessed.isPrime === warframeDelDia.isPrime, delay * 2);
     addCell(row, guessed.aura, guessed.aura === warframeDelDia.aura, delay * 3);
-    addCell(row, guessed.releaseDate, guessed.releaseDate === warframeDelDia.releaseDate, delay * 4);
+
+    const guessedYear = parseInt(guessed.releaseYear);
+    const correctYear = parseInt(warframeDelDia.releaseYear);
+    console.log("anio guess: "+guessedYear);
+    console.log(correctYear);
+    let yearFeedback = guessedYear;
+
+    if (guessedYear > correctYear) {
+      yearFeedback += " 🔽";
+    } else if (guessedYear < correctYear) {
+      yearFeedback += " 🔼";
+    } else {
+      yearFeedback += " ✅";
+    }
+
+    addCell(row, yearFeedback, guessedYear === correctYear, delay * 4);
+
+
+
 
 
     tableBody.insertBefore(row, tableBody.firstChild);

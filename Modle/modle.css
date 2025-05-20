@@ -36,9 +36,15 @@ th, td {
 }
 
 td img {
+  object-fit: contain !important;
+  height: 100px !important;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+td img:hover {
+  transform: scale(2);
+}
+
 .autocomplete-list {
   position: absolute;
   background-color: #1e1e1e;
@@ -64,9 +70,8 @@ td img {
 }
 
 .autocomplete-item img {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
+  height: 50px;
+  aspect-ratio: auto;
   margin-right: 0.5rem;
   border-radius: 4px;
 }

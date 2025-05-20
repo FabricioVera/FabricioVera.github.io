@@ -1,7 +1,6 @@
 [
   {
     "armor": 195,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 43200,
@@ -15,7 +14,7 @@
     "isPrime": false,
     "masterable": true,
     "masteryReq": 0,
-    "name": "<ARCHWING> Amesha",
+    "name": "\u003CARCHWING\u003E Amesha",
     "polarities": [
       "naramon",
       "vazarin",
@@ -34,8 +33,7 @@
     "uniqueName": "/Lotus/Powersuits/Archwing/SupportJetPack/SupportJetPack",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Amesha.png?bb937",
-    "wikiaUrl": "https://wiki.warframe.com/w/Amesha",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Amesha"
   },
   {
     "armor": 105,
@@ -59,7 +57,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Ash",
-    "passiveDescription": "Los efectos de estado <DT_SLASH_COLOR>cortante infligidos en los enemigos causan un |DAMAGE| % más de daño y duran un |DURATION| % más.",
+    "passiveDescription": "Los efectos de estado \u003CDT_SLASH_COLOR\u003Ecortante infligidos en los enemigos causan un |DAMAGE| % más de daño y duran un |DURATION| % más.",
     "polarities": [
       "madurai",
       "madurai"
@@ -78,8 +76,7 @@
     "uniqueName": "/Lotus/Powersuits/Ninja/Ninja",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Ash.png?db305",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ash",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ash"
   },
   {
     "armor": 185,
@@ -102,7 +99,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Ash Prime",
-    "passiveDescription": "Los efectos de estado <DT_SLASH>cortante infligidos en los enemigos causan un |DAMAGE| % más de daño y duran un |DURATION| % más.",
+    "passiveDescription": "Los efectos de estado \u003CDT_SLASH\u003Ecortante infligidos en los enemigos causan un |DAMAGE| % más de daño y duran un |DURATION| % más.",
     "polarities": [
       "naramon",
       "madurai",
@@ -124,8 +121,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/AshPrime.png?373a7",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ash%2FPrime",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ash%2FPrime"
   },
   {
     "armor": 475,
@@ -168,8 +164,7 @@
     "uniqueName": "/Lotus/Powersuits/Brawler/Brawler",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Atlas.png?91499",
-    "wikiaUrl": "https://wiki.warframe.com/w/Atlas",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Atlas"
   },
   {
     "armor": 500,
@@ -215,8 +210,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/AtlasPrime.png?25c96",
-    "wikiaUrl": "https://wiki.warframe.com/w/Atlas%2FPrime",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Atlas%2FPrime"
   },
   {
     "armor": 105,
@@ -255,8 +249,7 @@
     "uniqueName": "/Lotus/Powersuits/Banshee/Banshee",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Banshee.png?1f779",
-    "wikiaUrl": "https://wiki.warframe.com/w/Banshee",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Banshee"
   },
   {
     "armor": 135,
@@ -298,8 +291,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/BansheePrime.png?5d57f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Banshee%2FPrime",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Banshee%2FPrime"
   },
   {
     "armor": 185,
@@ -341,8 +333,7 @@
     "uniqueName": "/Lotus/Powersuits/Pacifist/Pacifist",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Baruuk.png?30a1c",
-    "wikiaUrl": "https://wiki.warframe.com/w/Baruuk",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Baruuk"
   },
   {
     "armor": 240,
@@ -386,12 +377,10 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/BaruukPrime.png?b2420",
-    "wikiaUrl": "https://wiki.warframe.com/w/Baruuk%2FPrime",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Baruuk%2FPrime"
   },
   {
     "armor": 480,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -416,8 +405,7 @@
     "stamina": 200,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/EntratiMech/ThanoTech",
-    "releaseYear": "2020"
+    "uniqueName": "/Lotus/Powersuits/EntratiMech/ThanoTech"
   },
   {
     "armor": 290,
@@ -456,8 +444,7 @@
     "uniqueName": "/Lotus/Powersuits/Sentient/Sentient",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Caliban.png?c916e",
-    "wikiaUrl": "https://wiki.warframe.com/w/Caliban",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Caliban"
   },
   {
     "armor": 370,
@@ -496,8 +483,7 @@
     "uniqueName": "/Lotus/Powersuits/Dragon/Dragon",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Chroma.png?545f7",
-    "wikiaUrl": "https://wiki.warframe.com/w/Chroma",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Chroma"
   },
   {
     "armor": 450,
@@ -540,8 +526,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ChromaPrime.png?71048",
-    "wikiaUrl": "https://wiki.warframe.com/w/Chroma%2FPrime",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Chroma%2FPrime"
   },
   {
     "armor": 265,
@@ -580,8 +565,7 @@
     "uniqueName": "/Lotus/Powersuits/Geode/Geode",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Citrine.png?89b01",
-    "wikiaUrl": "https://wiki.warframe.com/w/Citrine",
-    "releaseYear": "2023"
+    "wikiaUrl": "https://wiki.warframe.com/w/Citrine"
   },
   {
     "armor": 150,
@@ -623,12 +607,10 @@
     "uniqueName": "/Lotus/Powersuits/Frumentarius/Frumentarius",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Cyte-09.png?b161b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Cyte-09",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Cyte-09"
   },
   {
     "armor": 125,
-    "aura": "Zenurik",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -650,14 +632,10 @@
     "stamina": 3,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/Dagath/Dagath",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Dagath.png/300px-Dagath.png?4b231",
-    "wikiaUrl": "https://wiki.warframe.com/w/Dagath",
-    "releaseYear": "2023"
+    "uniqueName": "/Lotus/Powersuits/Dagath/Dagath"
   },
   {
     "armor": 145,
-    "aura": "Omni",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -682,14 +660,10 @@
     "stamina": 3,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/Pagemaster/Pagemaster",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Dante.png/300px-Dante.png?c0761",
-    "wikiaUrl": "https://wiki.warframe.com/w/Dante",
-    "releaseYear": "2024"
+    "uniqueName": "/Lotus/Powersuits/Pagemaster/Pagemaster"
   },
   {
     "armor": 145,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 129600,
@@ -701,7 +675,7 @@
     "isPrime": false,
     "masterable": true,
     "masteryReq": 0,
-    "name": "<ARCHWING> Elytron",
+    "name": "\u003CARCHWING\u003E Elytron",
     "power": 120,
     "productCategory": "SpaceSuits",
     "shield": 745,
@@ -710,10 +684,7 @@
     "stamina": 150,
     "tradable": false,
     "type": "Archwing",
-    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Elytron.png/300px-Elytron.png?95527",
-    "wikiaUrl": "https://wiki.warframe.com/w/Elytron",
-    "releaseYear": "2014"
+    "uniqueName": "/Lotus/Powersuits/Archwing/DemolitionJetPack/DemolitionJetPack"
   },
   {
     "armor": 135,
@@ -734,7 +705,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Ember",
-    "passiveDescription": "Recibe |STRENGTH| % de fuerza de habilidad por cada enemigo dentro del rango de <AFFINITY_SHARE>afinidad afectado por el estado de <DT_FIRE_COLOR>calor.",
+    "passiveDescription": "Recibe |STRENGTH| % de fuerza de habilidad por cada enemigo dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad afectado por el estado de \u003CDT_FIRE_COLOR\u003Ecalor.",
     "polarities": [
       "naramon",
       "naramon"
@@ -753,8 +724,7 @@
     "uniqueName": "/Lotus/Powersuits/Ember/Ember",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Ember.png?20dac",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ember",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ember"
   },
   {
     "armor": 160,
@@ -774,7 +744,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Ember Prime",
-    "passiveDescription": "Recibe |STRENGTH| % de fuerza de habilidad por cada enemigo dentro del rango de <AFFINITY_SHARE>afinidad afectado por el estado de <DT_FIRE_COLOR>calor.",
+    "passiveDescription": "Recibe |STRENGTH| % de fuerza de habilidad por cada enemigo dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad afectado por el estado de \u003CDT_FIRE_COLOR\u003Ecalor.",
     "polarities": [
       "madurai",
       "vazarin"
@@ -795,8 +765,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/EmberPrime.png?f1136",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ember%2FPrime",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ember%2FPrime"
   },
   {
     "armor": 135,
@@ -835,8 +804,7 @@
     "uniqueName": "/Lotus/Powersuits/YinYang/YinYang",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Equinox.png?62279",
-    "wikiaUrl": "https://wiki.warframe.com/w/Equinox",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Equinox"
   },
   {
     "armor": 160,
@@ -879,8 +847,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/EquinoxPrime.png?7dc5f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Equinox%2FPrime",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Equinox%2FPrime"
   },
   {
     "armor": 240,
@@ -922,8 +889,7 @@
     "uniqueName": "/Lotus/Powersuits/Excalibur/Excalibur",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Excalibur.png?97103",
-    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur"
   },
   {
     "armor": 315,
@@ -961,8 +927,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ExcaliburPrime.png?0ba1d",
-    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur%2FPrime",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur%2FPrime"
   },
   {
     "armor": 315,
@@ -1005,8 +970,7 @@
     "uniqueName": "/Lotus/Powersuits/Excalibur/ExcaliburUmbra",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ExcaliburUmbra.png?73c5c",
-    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur_Umbra",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Excalibur_Umbra"
   },
   {
     "armor": 315,
@@ -1027,7 +991,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Frost",
-    "passiveDescription": "Los efectos de estado de frío de las habilidades de Frost duran un |DURATION| % más. Frost obtiene |ARMOR| de armadura por cada enemigo afectado con <DT_FREEZE_COLOR>frío dentro del rango de <AFFINITY_SHARE>afinidad.",
+    "passiveDescription": "Los efectos de estado de frío de las habilidades de Frost duran un |DURATION| % más. Frost obtiene |ARMOR| de armadura por cada enemigo afectado con \u003CDT_FREEZE_COLOR\u003Efrío dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad.",
     "polarities": [
       "naramon",
       "vazarin"
@@ -1046,8 +1010,7 @@
     "uniqueName": "/Lotus/Powersuits/Frost/Frost",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Frost.png?32f8e",
-    "wikiaUrl": "https://wiki.warframe.com/w/Frost",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Frost"
   },
   {
     "armor": 315,
@@ -1067,7 +1030,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Frost Prime",
-    "passiveDescription": "Los efectos de estado de frío de las habilidades de Frost duran un |DURATION| % más. Frost obtiene |ARMOR| de armadura por cada enemigo afectado con <DT_FREEZE_COLOR>frío dentro del rango de <AFFINITY_SHARE>afinidad.",
+    "passiveDescription": "Los efectos de estado de frío de las habilidades de Frost duran un |DURATION| % más. Frost obtiene |ARMOR| de armadura por cada enemigo afectado con \u003CDT_FREEZE_COLOR\u003Efrío dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad.",
     "polarities": [
       "naramon",
       "vazarin",
@@ -1089,8 +1052,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/FrostPrime.png?d491e",
-    "wikiaUrl": "https://wiki.warframe.com/w/Frost%2FPrime",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Frost%2FPrime"
   },
   {
     "armor": 160,
@@ -1132,8 +1094,7 @@
     "uniqueName": "/Lotus/Powersuits/Glass/Glass",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Gara.png?1c84b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Gara",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Gara"
   },
   {
     "armor": 200,
@@ -1177,8 +1138,7 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/GaraPrime.png?08009",
-    "wikiaUrl": "https://wiki.warframe.com/w/Gara%2FPrime",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Gara%2FPrime"
   },
   {
     "armor": 315,
@@ -1220,8 +1180,7 @@
     "uniqueName": "/Lotus/Powersuits/Garuda/Garuda",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Garuda.png?0f856",
-    "wikiaUrl": "https://wiki.warframe.com/w/Garuda",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Garuda"
   },
   {
     "armor": 420,
@@ -1265,8 +1224,7 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/GarudaPrime.png?13f16",
-    "wikiaUrl": "https://wiki.warframe.com/w/Garuda%2FPrime",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Garuda%2FPrime"
   },
   {
     "armor": 185,
@@ -1306,8 +1264,7 @@
     "uniqueName": "/Lotus/Powersuits/Runner/Runner",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Gauss.png?fb087",
-    "wikiaUrl": "https://wiki.warframe.com/w/Gauss",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Gauss"
   },
   {
     "armor": 185,
@@ -1346,8 +1303,7 @@
     "uniqueName": "/Lotus/Powersuits/Runner/GaussPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/GaussPrime.png?aa6cc",
-    "wikiaUrl": "https://wiki.warframe.com/w/Gauss%2FPrime",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Gauss%2FPrime"
   },
   {
     "armor": 370,
@@ -1388,8 +1344,7 @@
     "uniqueName": "/Lotus/Powersuits/Devourer/Devourer",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Grendel.png?f4a0b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Grendel",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Grendel"
   },
   {
     "armor": 400,
@@ -1429,8 +1384,7 @@
     "uniqueName": "/Lotus/Powersuits/Devourer/GrendelPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/GrendelPrime.png?62987",
-    "wikiaUrl": "https://wiki.warframe.com/w/Grendel%2FPrime",
-    "releaseYear": "2023"
+    "wikiaUrl": "https://wiki.warframe.com/w/Grendel%2FPrime"
   },
   {
     "armor": 105,
@@ -1469,8 +1423,7 @@
     "uniqueName": "/Lotus/Powersuits/Gyre/Gyre",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Gyre.png?f7a7f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Gyre",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Gyre"
   },
   {
     "armor": 185,
@@ -1509,8 +1462,7 @@
     "uniqueName": "/Lotus/Powersuits/Priest/Priest",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Harrow.png?6b992",
-    "wikiaUrl": "https://wiki.warframe.com/w/Harrow",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Harrow"
   },
   {
     "armor": 185,
@@ -1531,7 +1483,6 @@
     "power": 140,
     "productCategory": "Suits",
     "releaseDate": "2021-12-16",
-    "sex": "Male",
     "shield": 640,
     "skipBuildTimePrice": 50,
     "sprintSpeed": 1,
@@ -1539,8 +1490,35 @@
     "tradable": false,
     "type": "Warframe",
     "uniqueName": "/Lotus/Powersuits/Priest/HarrowPrime",
-    "vaulted": false,
-    "releaseYear": "2021"
+    "vaulted": false
+  },
+  {
+    "armor": 0,
+    "category": "Warframes",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "Entrati (Son), Associate",
+        "rarity": "Common",
+        "type": "Helminth Segment Blueprint"
+      },
+      {
+        "chance": 1,
+        "location": "Entrati (Son), Family",
+        "rarity": "Common",
+        "type": "Helminth Invigoration Segment Blueprint"
+      }
+    ],
+    "health": 0,
+    "isPrime": false,
+    "masterable": false,
+    "name": "Helminth",
+    "power": 0,
+    "shield": 0,
+    "stamina": 0,
+    "tradable": false,
+    "type": "Warframe",
+    "uniqueName": "/Lotus/Powersuits/PowersuitAbilities/Helminth"
   },
   {
     "armor": 315,
@@ -1582,12 +1560,10 @@
     "uniqueName": "/Lotus/Powersuits/IronFrame/IronFrame",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Hildryn.png?f6fc3",
-    "wikiaUrl": "https://wiki.warframe.com/w/Hildryn",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Hildryn"
   },
   {
     "armor": 315,
-    "aura": "Naramon",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -1613,10 +1589,7 @@
     "tradable": false,
     "type": "Warframe",
     "uniqueName": "/Lotus/Powersuits/IronFrame/IronFramePrime",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/HildrynPrime.png/300px-HildrynPrime.png?36b86",
-    "wikiaUrl": "https://wiki.warframe.com/w/Hildryn/Prime",
-    "vaulted": true,
-    "releaseYear": "2019"
+    "vaulted": true
   },
   {
     "armor": 240,
@@ -1637,7 +1610,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Hydroid",
-    "passiveDescription": "Los enemigos dañados por Hydroid son más vulnerables al estado <DT_CORROSIVE_COLOR>corrosivo, con un estado inicial reduciendo la armadura en un |PCT| %.",
+    "passiveDescription": "Los enemigos dañados por Hydroid son más vulnerables al estado \u003CDT_CORROSIVE_COLOR\u003Ecorrosivo, con un estado inicial reduciendo la armadura en un |PCT| %.",
     "polarities": [
       "madurai",
       "naramon"
@@ -1656,8 +1629,7 @@
     "uniqueName": "/Lotus/Powersuits/Pirate/Pirate",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Hydroid.png?48637",
-    "wikiaUrl": "https://wiki.warframe.com/w/Hydroid",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Hydroid"
   },
   {
     "armor": 290,
@@ -1677,7 +1649,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Hydroid Prime",
-    "passiveDescription": "Los enemigos dañados por Hydroid son más vulnerables al estado <DT_CORROSIVE_COLOR>corrosivo, con un estado inicial reduciendo la armadura en un |PCT| %.",
+    "passiveDescription": "Los enemigos dañados por Hydroid son más vulnerables al estado \u003CDT_CORROSIVE_COLOR\u003Ecorrosivo, con un estado inicial reduciendo la armadura en un |PCT| %.",
     "polarities": [
       "madurai",
       "vazarin",
@@ -1700,8 +1672,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/HydroidPrime.png?170c3",
-    "wikiaUrl": "https://wiki.warframe.com/w/Hydroid%2FPrime",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Hydroid%2FPrime"
   },
   {
     "armor": 240,
@@ -1740,8 +1711,7 @@
     "uniqueName": "/Lotus/Powersuits/Sandman/Sandman",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Inaros.png?f5b59",
-    "wikiaUrl": "https://wiki.warframe.com/w/Inaros",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Inaros"
   },
   {
     "armor": 240,
@@ -1783,12 +1753,10 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/InarosPrime.png?cd69a",
-    "wikiaUrl": "https://wiki.warframe.com/w/Inaros%2FPrime",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Inaros%2FPrime"
   },
   {
     "armor": 50,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 129600,
@@ -1800,7 +1768,7 @@
     "isPrime": false,
     "masterable": true,
     "masteryReq": 0,
-    "name": "<ARCHWING> Itzal",
+    "name": "\u003CARCHWING\u003E Itzal",
     "power": 220,
     "productCategory": "SpaceSuits",
     "shield": 220,
@@ -1809,10 +1777,7 @@
     "stamina": 500,
     "tradable": false,
     "type": "Archwing",
-    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Itzal.png/300px-Itzal.png?472fe",
-    "wikiaUrl": "https://wiki.warframe.com/w/Itzal",
-    "releaseYear": "2014"
+    "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/StealthJetPack"
   },
   {
     "armor": 105,
@@ -1854,8 +1819,7 @@
     "uniqueName": "/Lotus/Powersuits/Ranger/Ranger",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Ivara.png?3a915",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ivara",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ivara"
   },
   {
     "armor": 135,
@@ -1900,8 +1864,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/IvaraPrime.png?59590",
-    "wikiaUrl": "https://wiki.warframe.com/w/Ivara%2FPrime",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Ivara%2FPrime"
   },
   {
     "armor": 135,
@@ -1942,8 +1905,7 @@
     "uniqueName": "/Lotus/Powersuits/Choir/Choir",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Jade%28Warframe%29.png?532ac",
-    "wikiaUrl": "https://wiki.warframe.com/w/Jade",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Jade"
   },
   {
     "armor": 290,
@@ -1986,8 +1948,7 @@
     "uniqueName": "/Lotus/Powersuits/Khora/Khora",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Khora.png?28137",
-    "wikiaUrl": "https://wiki.warframe.com/w/Khora",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Khora"
   },
   {
     "armor": 345,
@@ -2032,8 +1993,7 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/KhoraPrime.png?730fb",
-    "wikiaUrl": "https://wiki.warframe.com/w/Khora%2FPrime",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Khora%2FPrime"
   },
   {
     "armor": 444,
@@ -2072,8 +2032,7 @@
     "uniqueName": "/Lotus/Powersuits/Koumei/Koumei",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Koumei.png?2085e",
-    "wikiaUrl": "https://wiki.warframe.com/w/Koumei",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Koumei"
   },
   {
     "armor": 550,
@@ -2112,8 +2071,7 @@
     "uniqueName": "/Lotus/Powersuits/PaxDuviricus/PaxDuviricus",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Kullervo.png?5e09b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Kullervo",
-    "releaseYear": "2023"
+    "wikiaUrl": "https://wiki.warframe.com/w/Kullervo"
   },
   {
     "armor": 575,
@@ -2152,8 +2110,7 @@
     "uniqueName": "/Lotus/Powersuits/Alchemist/Alchemist",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Lavos.png?8996d",
-    "wikiaUrl": "https://wiki.warframe.com/w/Lavos",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Lavos"
   },
   {
     "armor": 575,
@@ -2192,8 +2149,7 @@
     "uniqueName": "/Lotus/Powersuits/Alchemist/LavosPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/LavosPrime.png?b1901",
-    "wikiaUrl": "https://wiki.warframe.com/w/Lavos%2FPrime",
-    "releaseYear": "2025"
+    "wikiaUrl": "https://wiki.warframe.com/w/Lavos%2FPrime"
   },
   {
     "armor": 105,
@@ -2233,8 +2189,7 @@
     "uniqueName": "/Lotus/Powersuits/Magician/Magician",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Limbo.png?5b51a",
-    "wikiaUrl": "https://wiki.warframe.com/w/Limbo",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Limbo"
   },
   {
     "armor": 135,
@@ -2277,8 +2232,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/LimboPrime.png?081f6",
-    "wikiaUrl": "https://wiki.warframe.com/w/Limbo%2FPrime",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Limbo%2FPrime"
   },
   {
     "armor": 105,
@@ -2318,8 +2272,7 @@
     "uniqueName": "/Lotus/Powersuits/Loki/Loki",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Loki.png?35af7",
-    "wikiaUrl": "https://wiki.warframe.com/w/Loki",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Loki"
   },
   {
     "armor": 135,
@@ -2362,8 +2315,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/LokiPrime.png?62a71",
-    "wikiaUrl": "https://wiki.warframe.com/w/Loki%2FPrime",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Loki%2FPrime"
   },
   {
     "armor": 105,
@@ -2403,8 +2355,7 @@
     "uniqueName": "/Lotus/Powersuits/Mag/Mag",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Mag.png?3a64c",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mag",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mag"
   },
   {
     "armor": 135,
@@ -2446,8 +2397,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/MagPrime.png?89603",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mag%2FPrime",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mag%2FPrime"
   },
   {
     "armor": 105,
@@ -2489,8 +2439,7 @@
     "uniqueName": "/Lotus/Powersuits/Cowgirl/Cowgirl",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Mesa.png?fbb32",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mesa",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mesa"
   },
   {
     "armor": 135,
@@ -2536,8 +2485,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/MesaPrime.png?c5a03",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mesa%2FPrime",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mesa%2FPrime"
   },
   {
     "armor": 105,
@@ -2576,8 +2524,7 @@
     "uniqueName": "/Lotus/Powersuits/Harlequin/Harlequin",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Mirage.png?c6c07",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mirage",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mirage"
   },
   {
     "armor": 185,
@@ -2620,8 +2567,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/MiragePrime.png?606b5",
-    "wikiaUrl": "https://wiki.warframe.com/w/Mirage%2FPrime",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Mirage%2FPrime"
   },
   {
     "armor": 105,
@@ -2660,8 +2606,7 @@
     "uniqueName": "/Lotus/Powersuits/Necro/Necro",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Nekros.png?0fa45",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nekros",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nekros"
   },
   {
     "armor": 135,
@@ -2702,8 +2647,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/NekrosPrime.png?29f4a",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nekros%2FPrime",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nekros%2FPrime"
   },
   {
     "armor": 200,
@@ -2743,8 +2687,7 @@
     "uniqueName": "/Lotus/Powersuits/Nezha/Nezha",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Nezha.png?23673",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nezha",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nezha"
   },
   {
     "armor": 265,
@@ -2786,8 +2729,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/NezhaPrime.png?1d330",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nezha%2FPrime",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nezha%2FPrime"
   },
   {
     "armor": 350,
@@ -2826,8 +2768,7 @@
     "uniqueName": "/Lotus/Powersuits/Infestation/Infestation",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Nidus.png?d4fb6",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nidus",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nidus"
   },
   {
     "armor": 425,
@@ -2869,8 +2810,7 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/NidusPrime.png?b61c5",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nidus%2FPrime",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nidus%2FPrime"
   },
   {
     "armor": 105,
@@ -2910,8 +2850,7 @@
     "uniqueName": "/Lotus/Powersuits/AntiMatter/Anti",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Nova.png?a8d96",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nova",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nova"
   },
   {
     "armor": 135,
@@ -2953,8 +2892,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/NovaPrime.png?34d15",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nova%2FPrime",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nova%2FPrime"
   },
   {
     "armor": 105,
@@ -2975,7 +2913,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Nyx",
-    "passiveDescription": "Nyx gana +|CRITICAL| % de probabilidad crítica en armas primarias y secundarias por cada enemigo confundido dentro del rango de <AFFINITY_SHARE>afinidad, hasta un máximo de +|MAX| %.",
+    "passiveDescription": "Nyx gana +|CRITICAL| % de probabilidad crítica en armas primarias y secundarias por cada enemigo confundido dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad, hasta un máximo de +|MAX| %.",
     "polarities": [
       "madurai",
       "naramon"
@@ -2994,8 +2932,7 @@
     "uniqueName": "/Lotus/Powersuits/Jade/Jade",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Nyx.png?00908",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nyx",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nyx"
   },
   {
     "armor": 135,
@@ -3015,7 +2952,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Nyx Prime",
-    "passiveDescription": "Nyx gana +|CRITICAL| % de probabilidad crítica en armas primarias y secundarias por cada enemigo confundido dentro del rango de <AFFINITY_SHARE>afinidad, hasta un máximo de +|MAX| %.",
+    "passiveDescription": "Nyx gana +|CRITICAL| % de probabilidad crítica en armas primarias y secundarias por cada enemigo confundido dentro del rango de \u003CAFFINITY_SHARE\u003Eafinidad, hasta un máximo de +|MAX| %.",
     "polarities": [
       "madurai",
       "naramon",
@@ -3037,8 +2974,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/NyxPrime.png?10995",
-    "wikiaUrl": "https://wiki.warframe.com/w/Nyx%2FPrime",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Nyx%2FPrime"
   },
   {
     "armor": 185,
@@ -3078,8 +3014,7 @@
     "uniqueName": "/Lotus/Powersuits/Paladin/Paladin",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Oberon.png?ea604",
-    "wikiaUrl": "https://wiki.warframe.com/w/Oberon",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Oberon"
   },
   {
     "armor": 240,
@@ -3122,8 +3057,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/OberonPrime.png?bd523",
-    "wikiaUrl": "https://wiki.warframe.com/w/Oberon%2FPrime",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Oberon%2FPrime"
   },
   {
     "armor": 160,
@@ -3162,8 +3096,7 @@
     "uniqueName": "/Lotus/Powersuits/Bard/Bard",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Octavia.png?aa13e",
-    "wikiaUrl": "https://wiki.warframe.com/w/Octavia",
-    "releaseYear": "2017"
+    "wikiaUrl": "https://wiki.warframe.com/w/Octavia"
   },
   {
     "armor": 160,
@@ -3205,12 +3138,10 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/OctaviaPrime.png?5a09d",
-    "wikiaUrl": "https://wiki.warframe.com/w/Octavia%2FPrime",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Octavia%2FPrime"
   },
   {
     "armor": 100,
-    "aura": "None",
     "buildPrice": 7000,
     "buildQuantity": 1,
     "buildTime": 60,
@@ -3222,7 +3153,7 @@
     "isPrime": false,
     "masterable": true,
     "masteryReq": 0,
-    "name": "<ARCHWING> Odonata",
+    "name": "\u003CARCHWING\u003E Odonata",
     "power": 85,
     "productCategory": "SpaceSuits",
     "shield": 430,
@@ -3231,14 +3162,10 @@
     "stamina": 200,
     "tradable": false,
     "type": "Archwing",
-    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Odonata.png/300px-Odonata.png?63361",
-    "wikiaUrl": "https://wiki.warframe.com/w/Odonata",
-    "releaseYear": "2014"
+    "uniqueName": "/Lotus/Powersuits/Archwing/StandardJetPack/StandardJetPack"
   },
   {
     "armor": 100,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 129600,
@@ -3251,7 +3178,7 @@
     "isPrime": true,
     "masterable": true,
     "masteryReq": 0,
-    "name": "<ARCHWING> Odonata Prime",
+    "name": "\u003CARCHWING\u003E Odonata Prime",
     "power": 85,
     "productCategory": "SpaceSuits",
     "releaseDate": "2015-03-24",
@@ -3262,11 +3189,8 @@
     "tradable": true,
     "type": "Archwing",
     "uniqueName": "/Lotus/Powersuits/Archwing/PrimeJetPack/PrimeJetPack",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/OdonataPrime.png/300px-OdonataPrime.png?7b651",
-    "wikiaUrl": "https://wiki.warframe.com/w/Odonata/Prime",
     "vaultDate": "2017-02-28",
-    "vaulted": true,
-    "releaseYear": "2015"
+    "vaulted": true
   },
   {
     "armor": 135,
@@ -3306,8 +3230,7 @@
     "uniqueName": "/Lotus/Powersuits/Odalisk/Odalisk",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Protea.png?5aaec",
-    "wikiaUrl": "https://wiki.warframe.com/w/Protea",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Protea"
   },
   {
     "armor": 185,
@@ -3346,12 +3269,10 @@
     "uniqueName": "/Lotus/Powersuits/Odalisk/ProteaPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ProteaPrime.png?56831",
-    "wikiaUrl": "https://wiki.warframe.com/w/Protea%2FPrime",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Protea%2FPrime"
   },
   {
     "armor": 875,
-    "aura": "vazarin",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -3373,11 +3294,7 @@
     "stamina": 3,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Qorvex.png/300px-Qorvex.png?815ba",
-    "wikiaUrl": "https://wiki.warframe.com/w/Qorvex",
-    "releaseYear": "2023",
-    "sex": "Male"
+    "uniqueName": "/Lotus/Powersuits/ConcreteFrame/ConcreteFrame"
   },
   {
     "armor": 135,
@@ -3416,8 +3333,7 @@
     "uniqueName": "/Lotus/Powersuits/Revenant/Revenant",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Revenant.png?fd975",
-    "wikiaUrl": "https://wiki.warframe.com/w/Revenant",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Revenant"
   },
   {
     "armor": 135,
@@ -3458,8 +3374,7 @@
     "vaulted": false,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/RevenantPrime.png?e4097",
-    "wikiaUrl": "https://wiki.warframe.com/w/Revenant%2FPrime",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Revenant%2FPrime"
   },
   {
     "armor": 240,
@@ -3499,8 +3414,7 @@
     "uniqueName": "/Lotus/Powersuits/Rhino/Rhino",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Rhino.png?ae954",
-    "wikiaUrl": "https://wiki.warframe.com/w/Rhino",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Rhino"
   },
   {
     "armor": 290,
@@ -3542,8 +3456,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/RhinoPrime.png?b18c1",
-    "wikiaUrl": "https://wiki.warframe.com/w/Rhino%2FPrime",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Rhino%2FPrime"
   },
   {
     "armor": 240,
@@ -3583,8 +3496,7 @@
     "uniqueName": "/Lotus/Powersuits/Saryn/Saryn",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Saryn.png?74464",
-    "wikiaUrl": "https://wiki.warframe.com/w/Saryn",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Saryn"
   },
   {
     "armor": 315,
@@ -3626,8 +3538,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/SarynPrime.png?f437a",
-    "wikiaUrl": "https://wiki.warframe.com/w/Saryn%2FPrime",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Saryn%2FPrime"
   },
   {
     "armor": 160,
@@ -3668,8 +3579,7 @@
     "uniqueName": "/Lotus/Powersuits/Wraith/Wraith",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Sevagoth.png?6863b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Sevagoth",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Sevagoth"
   },
   {
     "armor": 185,
@@ -3710,8 +3620,7 @@
     "uniqueName": "/Lotus/Powersuits/Wraith/SevagothPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/SevagothPrime.png?2552c",
-    "wikiaUrl": "https://wiki.warframe.com/w/Sevagoth%2FPrime",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Sevagoth%2FPrime"
   },
   {
     "armor": 265,
@@ -3750,12 +3659,10 @@
     "uniqueName": "/Lotus/Powersuits/Hoplite/Hoplite",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Styanax.png?60e60",
-    "wikiaUrl": "https://wiki.warframe.com/w/Styanax",
-    "releaseYear": "2022"
+    "wikiaUrl": "https://wiki.warframe.com/w/Styanax"
   },
   {
     "armor": 325,
-    "aura": "naramon",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -3780,11 +3687,7 @@
     "stamina": 3,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/Temple/Temple",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Temple.png/300px-Temple.png?1e14f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Temple",
-    "releaseYear": "2025",
-    "sex": "Male"
+    "uniqueName": "/Lotus/Powersuits/Temple/Temple"
   },
   {
     "armor": 105,
@@ -3827,8 +3730,7 @@
     "uniqueName": "/Lotus/Powersuits/Fairy/Fairy",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Titania.png?58f33",
-    "wikiaUrl": "https://wiki.warframe.com/w/Titania",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Titania"
   },
   {
     "armor": 135,
@@ -3875,8 +3777,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/TitaniaPrime.png?a33ec",
-    "wikiaUrl": "https://wiki.warframe.com/w/Titania%2FPrime",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Titania%2FPrime"
   },
   {
     "armor": 105,
@@ -3897,7 +3798,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Trinity",
-    "passiveDescription": "Los aliados en el rango de <AFFINITY_SHARE>afinidad obtienen un |BUFF| % de la energía máxima de Trinity como salud.",
+    "passiveDescription": "Los aliados en el rango de \u003CAFFINITY_SHARE\u003Eafinidad obtienen un |BUFF| % de la energía máxima de Trinity como salud.",
     "polarities": [
       "vazarin",
       "vazarin"
@@ -3916,8 +3817,7 @@
     "uniqueName": "/Lotus/Powersuits/Trinity/Trinity",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Trinity.png?ee30d",
-    "wikiaUrl": "https://wiki.warframe.com/w/Trinity",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Trinity"
   },
   {
     "armor": 135,
@@ -3937,7 +3837,7 @@
     "masterable": true,
     "masteryReq": 0,
     "name": "Trinity Prime",
-    "passiveDescription": "Los aliados en el rango de <AFFINITY_SHARE>afinidad obtienen un |BUFF| % de la energía máxima de Trinity como salud.",
+    "passiveDescription": "Los aliados en el rango de \u003CAFFINITY_SHARE\u003Eafinidad obtienen un |BUFF| % de la energía máxima de Trinity como salud.",
     "polarities": [
       "vazarin",
       "vazarin",
@@ -3960,8 +3860,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/TrinityPrime.png?277fd",
-    "wikiaUrl": "https://wiki.warframe.com/w/Trinity%2FPrime",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Trinity%2FPrime"
   },
   {
     "armor": 630,
@@ -4004,8 +3903,7 @@
     "uniqueName": "/Lotus/Powersuits/Berserker/Berserker",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Valkyr.png?d633f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Valkyr",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Valkyr"
   },
   {
     "armor": 735,
@@ -4050,8 +3948,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ValkyrPrime.png?63221",
-    "wikiaUrl": "https://wiki.warframe.com/w/Valkyr%2FPrime",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Valkyr%2FPrime"
   },
   {
     "armor": 160,
@@ -4091,8 +3988,7 @@
     "uniqueName": "/Lotus/Powersuits/Trapper/Trapper",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Vauban.png?4d2ec",
-    "wikiaUrl": "https://wiki.warframe.com/w/Vauban",
-    "releaseYear": "2013"
+    "wikiaUrl": "https://wiki.warframe.com/w/Vauban"
   },
   {
     "armor": 210,
@@ -4134,12 +4030,10 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/VaubanPrime.png?d347f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Vauban%2FPrime",
-    "releaseYear": "2016"
+    "wikiaUrl": "https://wiki.warframe.com/w/Vauban%2FPrime"
   },
   {
     "armor": 385,
-    "aura": "None",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -4164,10 +4058,7 @@
     "stamina": 200,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/EntratiMech/NechroTech",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Voidrig.png/300px-Voidrig.png?1b92f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Voidrig",
-    "releaseYear": "2020"
+    "uniqueName": "/Lotus/Powersuits/EntratiMech/NechroTech"
   },
   {
     "armor": 105,
@@ -4207,8 +4098,7 @@
     "uniqueName": "/Lotus/Powersuits/Volt/Volt",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Volt.png?6e107",
-    "wikiaUrl": "https://wiki.warframe.com/w/Volt",
-    "releaseYear": "2012"
+    "wikiaUrl": "https://wiki.warframe.com/w/Volt"
   },
   {
     "armor": 135,
@@ -4250,12 +4140,10 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/VoltPrime.png?35509",
-    "wikiaUrl": "https://wiki.warframe.com/w/Volt%2FPrime",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Volt%2FPrime"
   },
   {
     "armor": 200,
-    "aura": "vazarin",
     "buildPrice": 25000,
     "buildQuantity": 1,
     "buildTime": 259200,
@@ -4277,11 +4165,7 @@
     "stamina": 3,
     "tradable": false,
     "type": "Warframe",
-    "uniqueName": "/Lotus/Powersuits/Werewolf/Werewolf",
-    "wikiaThumbnail": "https://wiki.warframe.com/images/thumb/Voruna.png/300px-Voruna.png?3ec67",
-    "wikiaUrl": "https://wiki.warframe.com/w/Voruna",
-    "releaseYear": "2022",
-    "sex": "Female"
+    "uniqueName": "/Lotus/Powersuits/Werewolf/Werewolf"
   },
   {
     "armor": 185,
@@ -4320,8 +4204,7 @@
     "uniqueName": "/Lotus/Powersuits/Wisp/Wisp",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Wisp.png?e6cde",
-    "wikiaUrl": "https://wiki.warframe.com/w/Wisp",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Wisp"
   },
   {
     "armor": 210,
@@ -4360,8 +4243,7 @@
     "uniqueName": "/Lotus/Powersuits/Wisp/WispPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/WispPrime.png?faa01",
-    "wikiaUrl": "https://wiki.warframe.com/w/Wisp%2FPrime",
-    "releaseYear": "2023"
+    "wikiaUrl": "https://wiki.warframe.com/w/Wisp%2FPrime"
   },
   {
     "armor": 265,
@@ -4404,8 +4286,7 @@
     "uniqueName": "/Lotus/Powersuits/MonkeyKing/MonkeyKing",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Wukong.png?abcbf",
-    "wikiaUrl": "https://wiki.warframe.com/w/Wukong",
-    "releaseYear": "2015"
+    "wikiaUrl": "https://wiki.warframe.com/w/Wukong"
   },
   {
     "armor": 290,
@@ -4450,8 +4331,7 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/WukongPrime.png?7544f",
-    "wikiaUrl": "https://wiki.warframe.com/w/Wukong%2FPrime",
-    "releaseYear": "2019"
+    "wikiaUrl": "https://wiki.warframe.com/w/Wukong%2FPrime"
   },
   {
     "armor": 146,
@@ -4490,8 +4370,7 @@
     "uniqueName": "/Lotus/Powersuits/BrokenFrame/BrokenFrame",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Xaku.png?eb470",
-    "wikiaUrl": "https://wiki.warframe.com/w/Xaku",
-    "releaseYear": "2020"
+    "wikiaUrl": "https://wiki.warframe.com/w/Xaku"
   },
   {
     "armor": 167,
@@ -4530,8 +4409,7 @@
     "uniqueName": "/Lotus/Powersuits/BrokenFrame/XakuPrime",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/XakuPrime.png?ea7e1",
-    "wikiaUrl": "https://wiki.warframe.com/w/Xaku%2FPrime",
-    "releaseYear": "2024"
+    "wikiaUrl": "https://wiki.warframe.com/w/Xaku%2FPrime"
   },
   {
     "armor": 105,
@@ -4570,8 +4448,7 @@
     "uniqueName": "/Lotus/Powersuits/Yareli/Yareli",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Yareli.png?a9e7b",
-    "wikiaUrl": "https://wiki.warframe.com/w/Yareli",
-    "releaseYear": "2021"
+    "wikiaUrl": "https://wiki.warframe.com/w/Yareli"
   },
   {
     "armor": 105,
@@ -4611,8 +4488,7 @@
     "uniqueName": "/Lotus/Powersuits/Tengu/Tengu",
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/Zephyr.png?d427c",
-    "wikiaUrl": "https://wiki.warframe.com/w/Zephyr",
-    "releaseYear": "2014"
+    "wikiaUrl": "https://wiki.warframe.com/w/Zephyr"
   },
   {
     "armor": 135,
@@ -4655,7 +4531,6 @@
     "vaulted": true,
     "wikiAvailable": true,
     "wikiaThumbnail": "https://wiki.warframe.com/images/ZephyrPrime.png?192c6",
-    "wikiaUrl": "https://wiki.warframe.com/w/Zephyr%2FPrime",
-    "releaseYear": "2018"
+    "wikiaUrl": "https://wiki.warframe.com/w/Zephyr%2FPrime"
   }
 ]
