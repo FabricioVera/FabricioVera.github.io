@@ -1,0 +1,376 @@
+[
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Trinity",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "New Loka, Flawless",
+        "rarity": "Common",
+        "type": "Abating Link (Trinity)"
+      },
+      {
+        "chance": 1,
+        "location": "The Perrin Sequence, Partner",
+        "rarity": "Common",
+        "type": "Abating Link (Trinity)"
+      }
+    ],
+    "fusionLimit": 3,
+    "imageName": "abating-link-8112d43453.jpg",
+    "introduced": {
+      "name": "Update 15.6",
+      "url": "https://wiki.warframe.com/w/Update_15%23Update_15.6",
+      "aliases": [
+        "15.6.0",
+        "15.6"
+      ],
+      "parent": "15.6",
+      "date": "2014-12-11"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Aumento de Enlace: reduce la armadura de los enemigos marcados por Enlace en un 30 %."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de Enlace: reduce la armadura de los enemigos marcados por Enlace en un 40 %."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de Enlace: reduce la armadura de los enemigos marcados por Enlace en un 50 %."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de Enlace: reduce la armadura de los enemigos marcados por Enlace en un 60 %."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Enlace mermador",
+    "patchlogs": [
+      {
+        "name": "Veilbreaker: Update 32",
+        "date": "2022-09-07T15:00:11Z",
+        "url": "https://forums.warframe.com/topic/1321162-veilbreaker-update-32/",
+        "additions": "",
+        "changes": "Increase Trinity's Abating Link (Augment) armor reduction from 45% to 60%.",
+        "fixes": ""
+      }
+    ],
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2014-12-11",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/Trinity/LinkAugmentCard",
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/AbatingLinkMod.png?37034",
+    "wikiaUrl": "https://wiki.warframe.com/w/Abating_Link",
+    "tags": [
+      "reduce la armadura"
+    ]
+  },
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Nidus",
+    "drops": [
+      {
+        "chance": 1,
+        "location": "Steel Meridian, General",
+        "rarity": "Common",
+        "type": "Abundant Mutation (Nidus)"
+      },
+      {
+        "chance": 1,
+        "location": "The Perrin Sequence, Partner",
+        "rarity": "Common",
+        "type": "Abundant Mutation (Nidus)"
+      }
+    ],
+    "fusionLimit": 3,
+    "imageName": "abundant-mutation-718523c822.jpg",
+    "introduced": {
+      "name": "Hotfix 27.5.4",
+      "url": "https://wiki.warframe.com/w/Update_27%23Hotfix_27.5.4",
+      "aliases": [
+        "27.5.4"
+      ],
+      "parent": "27.5",
+      "date": "2020-05-20"
+    },
+    "isAugment": true,
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "Aumento de pasiva: Nidus gana 50 acumulaciones de mutación máximas adicionales. Eterno tiene un tiempo de recarga de 30s."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de pasiva: Nidus gana 100 acumulaciones de mutación máximas adicionales. Eterno tiene un tiempo de recarga de 30s."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de pasiva: Nidus gana 150 acumulaciones de mutación máximas adicionales. Eterno tiene un tiempo de recarga de 30s."
+        ]
+      },
+      {
+        "stats": [
+          "Aumento de pasiva: Nidus gana 200 acumulaciones de mutación máximas adicionales. Eterno tiene un tiempo de recarga de 30s."
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Mutación abundante",
+    "polarity": "zenurik",
+    "rarity": "Rare",
+    "releaseDate": "2020-05-20",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Warframe Mod",
+    "uniqueName": "/Lotus/Powersuits/Infestation/InfestPassiveAugmentCard",
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/AbundantMutationMod.png?f757b",
+    "wikiaUrl": "https://wiki.warframe.com/w/Abundant_Mutation",
+    "tags": [
+      "acumulaciones"
+    ]
+  },
+  {
+    "baseDrain": 6,
+    "category": "Mods",
+    "compatName": "Shotgun",
+    "drops": [
+      {
+        "chance": 0.1897,
+        "location": "Nightmare Mode Rewards, Rotation A",
+        "rarity": "Uncommon",
+        "type": "Accelerated Blast"
+      }
+    ],
+    "fusionLimit": 3,
+    "imageName": "accelerated-blast-fefa70d539.jpg",
+    "introduced": {
+      "name": "Update 9.0",
+      "url": "https://wiki.warframe.com/w/Update_9%23Update_9.0",
+      "aliases": [
+        "Update 9",
+        "9",
+        "9.0"
+      ],
+      "parent": "9.0",
+      "date": "2013-07-13"
+    },
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "+15 % de cadencia de fuego",
+          "+15% de <DT_PUNCTURE_COLOR>perforación"
+        ]
+      },
+      {
+        "stats": [
+          "+30 % de cadencia de fuego",
+          "+30% de <DT_PUNCTURE_COLOR>perforación"
+        ]
+      },
+      {
+        "stats": [
+          "+45 % de cadencia de fuego",
+          "+45% de <DT_PUNCTURE_COLOR>perforación"
+        ]
+      },
+      {
+        "stats": [
+          "+60 % de cadencia de fuego",
+          "+60% de <DT_PUNCTURE_COLOR>perforación"
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Explosión acelerada",
+    "patchlogs": [
+      {
+        "name": "Recurring Nightmares",
+        "date": "2016-10-27T19:03:48Z",
+        "url": "https://forums.warframe.com/topic/711418-recurring-nightmares/",
+        "additions": "",
+        "changes": "Accelerated Blast",
+        "fixes": ""
+      }
+    ],
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "releaseDate": "2013-07-13",
+    "tradable": true,
+    "transmutable": false,
+    "type": "Shotgun Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/DualStat/AcceleratedBlastMod",
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/AcceleratedBlastMod.png?53429",
+    "wikiaUrl": "https://wiki.warframe.com/w/Accelerated_Blast",
+    "tags": [
+      "perforación"
+    ]
+  },
+  {
+    "baseDrain": 4,
+    "category": "Mods",
+    "compatName": "ROBOTIC",
+    "drops": [
+      {
+        "chance": 0.0022,
+        "location": "Arcane Boiler",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Arid Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Boiler",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Drekar Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Frontier Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Grineer Manic",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Kuva Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Narmer Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Toxic Ancient",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      },
+      {
+        "chance": 0.0022,
+        "location": "Tusk Seeker",
+        "rarity": "Rare",
+        "type": "Accelerated Deflection"
+      }
+    ],
+    "fusionLimit": 5,
+    "imageName": "accelerated-deflection-9363503912.jpg",
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "isPrime": false,
+    "levelStats": [
+      {
+        "stats": [
+          "+15% recarga de escudo",
+          "-7.5% de retraso de recarga de escudo"
+        ]
+      },
+      {
+        "stats": [
+          "+30% recarga de escudo",
+          "-15% de retraso de recarga de escudo"
+        ]
+      },
+      {
+        "stats": [
+          "+45% recarga de escudo",
+          "-22.5% de retraso de recarga de escudo"
+        ]
+      },
+      {
+        "stats": [
+          "+60% recarga de escudo",
+          "-30% de retraso de recarga de escudo"
+        ]
+      },
+      {
+        "stats": [
+          "+75% recarga de escudo",
+          "-37.5% de retraso de recarga de escudo"
+        ]
+      },
+      {
+        "stats": [
+          "+90% recarga de escudo",
+          "-45% de retraso de recarga de escudo"
+        ]
+      }
+    ],
+    "masterable": false,
+    "name": "Desviación acelerada",
+    "patchlogs": [
+      {
+        "name": "Update 18.13.0: TennoGen, Passives, & Reworks",
+        "date": "2016-05-27T21:20:29Z",
+        "url": "https://forums.warframe.com/topic/652752-update-18130-tennogen-passives-reworks%C2%A0/",
+        "additions": "",
+        "changes": "•    The ‘Fast Deflection’ Sentinel Mod has been renamed to ‘Accelerated Deflection’",
+        "fixes": ""
+      }
+    ],
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "releaseDate": "2012-10-25",
+    "tradable": true,
+    "transmutable": true,
+    "type": "Companion Mod",
+    "uniqueName": "/Lotus/Upgrades/Mods/Sentinel/SentinelShieldRechargeRateMod",
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/AcceleratedDeflectionMod.png?8b104",
+    "wikiaUrl": "https://wiki.warframe.com/w/Accelerated_Deflection",
+    "tags": []
+  }
+]

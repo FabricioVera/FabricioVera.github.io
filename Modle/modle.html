@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warframe del Día</title>
+  <link rel="stylesheet" href="warframedle.css" />
+</head>
+<body>
+  <main>
+    <h1>¿Cuál es el Warframe del día?</h1>
+    <input type="text" id="guessInput" placeholder="Escribí el nombre del Warframe..." autocomplete="off" />
+    <div style="position: relative"><div id="autocompleteList" class="autocomplete-list"></div></div>
+
+
+    <button id="submitGuess">Adivinar</button>
+
+    <table id="resultsTable" class="hidden">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Nombre</th>
+          <th>Género</th>
+          <th>Es Prime</th>
+          <th>Aura</th>
+          <th>Fecha de salida</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody"></tbody>
+    </table>
+  </main>
+
+  <script src="warframedle.js"></script>
+</body>
+</html>
