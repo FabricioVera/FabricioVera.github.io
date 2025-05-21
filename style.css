@@ -9,3 +9,61 @@ html {
     --text-color: white;
     --hover-color: blue;
 }
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.menu-container {
+    perspective: 800px;
+    width: 95%;
+}
+
+.menu-panel {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ccc;
+    margin-left: 15vw;
+    padding: 30px 10px;
+    width: 100%;
+    transform: rotateY(45deg) scale(1.5);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.menu-option {
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin: 5px 30px;
+    letter-spacing: 1px;
+    color: #ccc;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.menu-option.active {
+    color: #ffff88;
+    border: 1px solid #ffff88;
+}
+
+.menu-option:hover {
+    color: #fff;
+    background-color: #FFFFFF50;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+}
